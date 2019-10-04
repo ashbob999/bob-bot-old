@@ -97,7 +97,8 @@ const times = function(data, message, discord, client) {
     values.forEach(value => {
       let time = Math.round(value / 1000);
       
-      let hours = Math.floor(time / 3600); time = time - hours * 3600;
+      let hours = Math.floor(time / 3600);
+      time = time - hours * 3600;
       let minutes = Math.floor(time / 60);
       let seconds = time - minutes * 60;
       
